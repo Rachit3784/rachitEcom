@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+
+    android:padding="3dp"
+    android:layout_height="wrap_content">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="7dp"
+      >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/paymentclick"
+            android:padding="8dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/cash"
+                android:id="@+id/opimag"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/opimag"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:id="@+id/opname"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/dollar"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/opimag"
+                android:textStyle="bold"
+                android:text="$"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/opname"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/dollar"
+                android:layout_below="@+id/opname"
+                android:id="@+id/opprice"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Price"
+                android:textSize="25dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+</RelativeLayout>
+

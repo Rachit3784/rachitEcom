@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:fitsSystemWindows="true"
+    android:theme="@style/AppTheme"
+    tools:context=".ChatPage"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+        <com.google.android.material.appbar.AppBarLayout
+            android:layout_width="match_parent"
+            android:id="@+id/appbar"
+            android:layout_height="wrap_content">
+
+
+
+                <androidx.appcompat.widget.Toolbar
+                    android:id="@+id/srchtool"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:background="@color/magentaaa"
+                    android:layout_gravity="bottom" >
+
+                    <com.google.android.material.imageview.ShapeableImageView
+                        android:id="@+id/fimag"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+
+                        android:layout_marginStart="20dp"
+                        android:src="@drawable/progile"
+                        android:scaleType="fitXY"
+                        app:strokeWidth="2dp"
+                        android:padding="2dp"
+                        android:layout_gravity="bottom"
+                        android:layout_marginBottom="10dp"
+                        app:strokeColor="@color/black"
+                        app:shapeAppearance="@style/Profilemainshape" />
+
+                    <TextView
+                        android:id="@+id/fname"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+
+                        android:layout_marginBottom="18dp"
+                        android:text="Ecom Partner"
+                        android:textStyle="bold"
+                        android:textSize="25sp"
+                        android:textColor="@color/black"
+                        />
+
+                </androidx.appcompat.widget.Toolbar>
+
+
+
+
+
+        </com.google.android.material.appbar.AppBarLayout>
+
+
+
+                    <androidx.recyclerview.widget.RecyclerView
+                        android:id="@+id/chatrcv"
+                        android:layout_below="@+id/appbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="53dp"/>
+
+
+
+
+    <!-- Bottom Input Area with EditText and Buttons -->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:padding="8dp"
+        android:background="@color/white">
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/files"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentStart="true"
+            android:src="@drawable/sendfile"
+            android:scaleType="fitXY"
+            android:padding="2dp"
+            app:shapeAppearance="@style/Profilemainshape" />
+
+        <EditText
+            android:id="@+id/msg"
+            android:layout_width="100dp"
+            android:layout_height="40dp"
+            android:layout_toEndOf="@id/files"
+            android:layout_toStartOf="@id/send"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:hint="Message"
+            android:background="@drawable/edittext"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:layout_gravity="center_vertical"
+            android:layout_centerVertical="true" />
+
+        <com.google.android.material.imageview.ShapeableImageView
+            android:id="@+id/send"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_alignParentEnd="true"
+            android:src="@drawable/sendarrow"
+            android:scaleType="fitXY"
+            android:padding="2dp"
+            android:background="@drawable/clickeffect"
+            app:shapeAppearance="@style/Profilemainshape" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
+
+
+
+
+
+
+

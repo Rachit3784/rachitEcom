@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="15dp"
+        app:cardUseCompatPadding="true"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/paymentclick"
+            android:padding="8dp">
+            <ImageView
+                android:layout_width="80dp"
+                android:layout_height="80dp"
+                android:src="@drawable/cash"
+                android:id="@+id/cpimag"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cpimag"
+                android:textStyle="bold"
+                android:layout_marginStart="10dp"
+                android:id="@+id/cpname"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="23dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/dollar"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/cpimag"
+                android:textStyle="bold"
+                android:text="$"
+                android:layout_marginStart="10dp"
+                android:textColor="@color/black"
+                android:layout_below="@+id/cpname"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/dollar"
+                android:layout_below="@+id/cpname"
+                android:id="@+id/cpprice"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                android:text="Price"
+                android:textSize="25dp"/>
+            <TextView
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/cpimag"
+                android:layout_below="@+id/dollar"
+              android:layout_marginStart="10dp"
+
+                android:textColor="#D71515"
+                android:text="X  Cancelled"
+                android:textSize="25dp"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

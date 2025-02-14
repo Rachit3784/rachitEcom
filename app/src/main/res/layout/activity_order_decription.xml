@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".OrderDecription">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="0dp"
+        >
+
+
+
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/magentaaa"
+                app:title="Continue Shoping"
+                app:titleTextColor="@color/black"
+                android:id="@+id/desctool"
+
+                />
+
+
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        style="@style/AppTheme"
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:elevation="10dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/firstframe">
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/descimg"
+                        android:layout_width="200dp"
+                        android:layout_height="200dp"
+                        android:layout_centerHorizontal="true"
+                        android:src="@drawable/progile" />
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/descname"
+                        android:textColor="@color/black"
+                        android:layout_marginLeft="5dp"
+                        android:textStyle="bold"
+                        android:textSize="15dp"
+                        android:text="Name"
+                        android:layout_below="@+id/descimg"
+                        />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="$"
+                        android:id="@+id/dollar"
+                        android:layout_marginLeft="5dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_below="@+id/descname"
+                        />
+                    <TextView
+                        android:layout_width="330dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/descprice"
+                        android:text="200"
+                        android:layout_marginLeft="2dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="20dp"
+                        android:layout_toRightOf="@+id/dollar"
+                        android:layout_below="@+id/descname"
+                        />
+
+                    <androidx.appcompat.widget.AppCompatRatingBar
+                        android:id="@+id/descratingbar"
+                        android:layout_width="240dp"
+                        android:layout_height="60dp"
+                        android:layout_below="@id/descprice"
+                        android:numStars="5"
+                        android:layout_marginLeft="-40dp"
+                        android:rating="3"
+                        android:scaleX="0.6"
+                        android:isIndicator="true"
+                        android:scaleY="0.6"
+                        android:stepSize="0.5" />
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="120"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:id="@+id/descpcount"
+                        android:layout_marginLeft="-37dp"
+                        android:layout_toRightOf="@+id/descratingbar"
+                        android:layout_below="@+id/descprice"
+                        android:layout_marginTop="13dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="people rated"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="4dp"
+
+                        android:layout_toRightOf="@+id/descratingbar"
+                        android:layout_below="@+id/descprice"
+                        android:layout_marginTop="11dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text=" 4.1"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:layout_marginLeft="117dp"
+                        android:id="@+id/descnorate"
+                        android:layout_toRightOf="@+id/descratingbar"
+                        android:layout_below="@+id/descprice"
+                        android:layout_marginTop="11dp"/>
+
+                    <TextView
+                        android:layout_width="300dp"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/descaddress"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:text="Address"
+                        android:layout_below="@id/descratingbar"
+                        />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:id="@+id/descpin"
+                        android:layout_marginLeft="15dp"
+                        android:textColor="@color/black"
+                        android:textSize="20dp"
+                        android:text="PIN"
+                        android:layout_below="@id/descaddress"
+                        />
+
+                    <Button
+                        android:layout_width="250dp"
+                        android:layout_height="48dp"
+                        android:layout_below="@+id/descpin"
+                        android:layout_marginLeft="60dp"
+                        android:layout_marginTop="20dp"
+                        android:background="@drawable/button"
+                        android:id="@+id/cancel"
+                        android:text="Cancel"
+                        android:textColor="@color/black"
+                        android:textSize="18sp"
+                        android:textStyle="bold"
+                        />
+
+
+
+                </RelativeLayout>
+
+            </FrameLayout>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="5dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:id="@+id/msgbox"
+        android:gravity="left"
+        app:layout_constraintEnd_toEndOf="parent"
+        tools:layout_editor_absoluteY="2dp">
+
+<RelativeLayout
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/fstf"
+    android:layout_marginRight="3dp"
+    android:layout_marginTop="1dp"
+    android:background="@drawable/senderdesign"
+
+    >
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="SENDED MESSAGE"
+        android:textColor="@color/black"
+        android:textSize="15dp"
+          android:padding="3dp"
+        android:gravity="center"
+        android:id="@+id/sendedmsg"
+        />
+</RelativeLayout>
+       <RelativeLayout
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:id="@+id/sf"
+           android:layout_toRightOf="@id/fstf">
+
+           <com.google.android.material.imageview.ShapeableImageView
+               android:id="@+id/senderimag"
+               android:layout_width="30dp"
+               android:layout_height="30dp"
+               android:src="@drawable/progile"
+               android:scaleType="fitXY"
+               app:strokeWidth="2dp"
+               android:padding="2dp"
+               android:layout_gravity="bottom"
+               android:layout_marginBottom="5dp"
+               app:strokeColor="@color/black"
+
+               app:shapeAppearance="@style/Profilemainshape" />
+       </RelativeLayout>
+
+
+
+
+
+    </RelativeLayout>
+
+</RelativeLayout>

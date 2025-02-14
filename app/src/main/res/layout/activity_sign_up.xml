@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+android:background="@color/fpc"
+    style="@style/AppTheme"
+    android:layout_width="match_parent"
+    android:layout_height="950dp"
+    tools:context=".SignUP"
+    android:orientation="vertical">
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="800dp"
+
+   >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="250dp"
+        android:id="@+id/fl"
+        android:background="@color/fpc"
+
+        >
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/fpts"
+            android:text="SignUp"
+
+            android:textSize="40sp"
+            android:textStyle="bold"
+            android:textColor="@color/white"
+            android:layout_marginLeft="23dp"
+            android:layout_marginTop="160dp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Create your first account !!!"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_marginLeft="25dp"
+            android:layout_marginTop="210dp"
+            android:id="@+id/ct"/>
+
+
+    </RelativeLayout>
+
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_below="@+id/fl"
+    android:background="@drawable/style">
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="460dp"
+    android:orientation="vertical">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <RelativeLayout
+            android:id="@+id/sl"
+            android:layout_width="match_parent"
+            android:layout_height="550dp"
+            android:layout_below="@+id/ct"
+            android:layout_marginTop="15dp"
+
+            android:gravity="center_horizontal">
+
+
+            <EditText
+                android:id="@+id/email"
+
+                android:layout_width="260dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/edittext"
+                android:hint="Email"
+                android:inputType="textEmailAddress"
+                android:padding="10dp"
+                android:gravity="clip_horizontal"
+                android:textColorHint="#343434"
+                android:textSize="18dp" />
+
+            <EditText
+                android:id="@+id/pass"
+                android:layout_width="260dp"
+                android:layout_height="48dp"
+                android:layout_marginTop="110dp"
+                android:background="@drawable/edittext"
+                android:hint="Password"
+                android:gravity="center_vertical"
+                android:inputType="textPassword"
+
+                android:padding="10dp"
+                android:textColorHint="#343434"
+                android:textSize="18dp" />
+<!--            <TextView-->
+<!--                android:layout_width="wrap_content"-->
+<!--                android:layout_height="wrap_content"-->
+<!--                android:text="ForgetPassword?"-->
+<!--                android:id="@+id/Fpass"-->
+<!--                android:textStyle="bold"-->
+<!--                android:textSize="13dp"-->
+<!--                android:textColor="#A8D42F"-->
+<!--                android:layout_marginTop="167dp"-->
+<!--                android:layout_marginLeft="159dp"-->
+<!--                />-->
+
+            <Button
+                android:layout_width="260dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/pass"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/button"
+                android:id="@+id/signup"
+                android:text="SignUp"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <Button
+                android:layout_width="260dp"
+                android:layout_height="48dp"
+                android:layout_below="@+id/pass"
+                android:layout_marginTop="30dp"
+
+                android:background="@drawable/button"
+                android:id="@+id/verify"
+                android:text="Verify"
+                android:visibility="invisible"
+                android:textColor="@color/black"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                />
+            <ProgressBar
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:id="@+id/prgrss"
+                android:layout_below="@+id/pass"
+                android:layout_marginTop="30dp"
+                android:visibility="invisible"
+              android:layout_marginLeft="110dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Or Register with !!!"
+                android:textSize="17dp"
+                android:id="@+id/or"
+                android:textColor="#171717"
+                android:layout_marginTop="280dp"
+                android:layout_marginLeft="65dp"/>
+
+            <ImageView
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:layout_below="@+id/or"
+                android:layout_marginLeft="35dp"
+                android:layout_marginTop="25dp"
+                android:src="@drawable/googlebuttonsec" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Already have an account ?"
+                android:textSize="17dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="410dp"
+                android:textColor="#171717"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="LogIn"
+                android:textSize="20dp"
+                android:id="@+id/Alogin"
+                android:textStyle="bold"
+                android:textColor="#A8D42F"
+                android:background="@drawable/textpress"
+                android:layout_marginTop="410dp"
+                android:layout_marginLeft="220dp"/>
+        </RelativeLayout>
+    </ScrollView>
+</LinearLayout>
+
+
+</RelativeLayout>
+
+
+
+</RelativeLayout>
+
+    </LinearLayout>
+

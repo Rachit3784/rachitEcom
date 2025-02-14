@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:padding="3dp"
+
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+<androidx.cardview.widget.CardView
+    android:layout_width="170dp"
+    android:layout_height="200dp"
+
+   android:background="@drawable/carddesing"
+
+    android:elevation="10dp"
+
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp"
+        android:id="@+id/ecompcard"
+        android:background="@drawable/carddesing"
+
+        >
+
+
+       <ImageView
+           android:layout_width="150dp"
+           android:layout_height="100dp"
+           android:layout_centerHorizontal="true"
+           android:layout_marginTop="15dp"
+android:scaleType="fitXY"
+
+           android:id="@+id/dimg"
+           android:src="@drawable/uichayyyyat"
+           android:background="@drawable/clickeffect"/>
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/name"
+    android:layout_below="@+id/dimg"
+    android:text="Dishes"
+    android:textColor="@color/black"
+    android:textSize="12dp"
+    android:background = "@drawable/clickeffect"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="7dp"
+    />
+        <TextView
+            android:textColor="@color/black"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/price"
+            android:layout_below="@+id/name"
+            android:background = "@drawable/clickeffect"
+            android:text="Dishes"
+            android:textSize="12dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="7dp"
+            />
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
+    
+    
+</RelativeLayout>

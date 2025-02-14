@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:background="#E6D9D9"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PaymentActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/appbar"
+        tools:ignore="MissingConstraints">
+   <androidx.appcompat.widget.Toolbar
+       android:layout_width="match_parent"
+       android:layout_height="50dp"
+       android:id="@+id/tool"
+       android:background="@color/magentaaa">
+
+       <TextView
+           android:layout_width="wrap_content"
+           android:layout_height="wrap_content"
+           android:text="Continue Shopping"
+           android:textStyle="bold"
+           android:textSize="20dp"
+           android:textColor="@color/black"
+           android:layout_marginStart="40dp"/>
+   </androidx.appcompat.widget.Toolbar>
+
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:id="@+id/fstf"
+android:padding="7dp"
+        android:layout_marginTop="5dp"
+        android:layout_below="@+id/appbar">
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_marginStart="5dp"
+            android:layout_height = "wrap_content"
+            android:background="@drawable/paymentclick">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="Product Name"
+                android:textColor="@color/black"
+                android:textSize="30dp"
+                android:id="@+id/Pname"
+                android:layout_marginTop="5dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="15dp"
+                android:text="$ "
+                android:layout_below="@+id/Pname"
+                android:textSize="30dp"
+                android:textColor="@color/black"
+                android:id="@+id/dollar"
+                android:layout_marginTop="3dp"
+                />
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="299"
+                android:layout_toRightOf="@+id/dollar"
+                android:layout_below="@+id/Pname"
+                android:textSize="30dp"
+                android:id="@+id/Prize"
+                android:layout_marginTop="3dp"
+                />
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/cash"
+        android:padding="7dp"
+        android:layout_below="@+id/fstf"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/paymentclick"
+            >
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Cash On Delivery"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="280dp"
+                android:src= "@drawable/cash"
+                />
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/GooglePay"
+        android:layout_below="@+id/cash"
+        android:layout_marginTop="2dp"
+        android:padding="7dp"
+        android:background="@color/white"
+        >
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/paymentclick"
+            android:layout_marginStart="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Google Pay"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="280dp"
+                android:src= "@drawable/googlepay"
+                />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/Paytm"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_below="@+id/GooglePay"
+        android:layout_marginTop="2dp"
+        android:background="@color/white"
+        android:padding="7dp">
+
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:layout_marginStart="5dp"
+            android:background="@drawable/paymentclick">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"
+                android:text="Paytm"
+                android:textColor="@color/black"
+                android:textSize="25dp"
+                android:textStyle="bold" />
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="280dp"
+                android:src="@drawable/paytm" />
+
+
+        </RelativeLayout>
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/PhonePay"
+        android:layout_below="@+id/Paytm"
+        android:layout_marginTop="2dp"
+        android:padding="7dp"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/paymentclick"
+            android:layout_marginStart="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Phone Pay"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"/>
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="240dp"
+                android:src="@drawable/phonepay"
+
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:id="@+id/netbank"
+        android:layout_below="@+id/PhonePay"
+        android:layout_marginTop="2dp"
+        android:padding="7dp"
+        android:background="@color/white"
+        >
+        <RelativeLayout
+            android:layout_width="370dp"
+            android:layout_height="match_parent"
+            android:background="@drawable/paymentclick"
+            android:layout_marginStart="5dp">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:text="Net Banking"
+                android:textStyle="bold"
+                android:textSize="25dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="15dp"/>
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_centerVertical="true"
+                android:layout_marginStart="280dp"
+                android:src= "@drawable/netbanking"
+                />
+
+
+
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+</RelativeLayout>

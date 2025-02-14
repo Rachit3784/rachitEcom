@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#FAF6F6"
+    android:padding="5dp">
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:elevation="10dp"
+        app:cardCornerRadius="2dp"
+        app:cardUseCompatPadding="true"
+        >
+<RelativeLayout
+    android:layout_width="match_parent"
+    android:layout_height="70dp"
+    android:background="#FBFBFB">
+    <com.google.android.material.imageview.ShapeableImageView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:id="@+id/contactimg"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="10dp"
+        android:src="@drawable/progile"
+        android:scaleType="fitXY"
+        android:padding="2dp"
+
+        android:clipToOutline="false"
+        app:shapeAppearance="@style/CustomShape"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/contactname"
+        android:text="searchresult"
+        android:textSize="25dp"
+        android:layout_toRightOf="@+id/contactimg"
+        android:layout_marginTop="14dp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:layout_marginLeft="15dp"/>
+</RelativeLayout>
+
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>

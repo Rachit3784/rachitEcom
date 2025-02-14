@@ -1,0 +1,117 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Cart">
+
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <com.google.android.material.appbar.CollapsingToolbarLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:background="@color/white"
+            app:contentScrim="@color/white"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:titleEnabled="false">
+            <androidx.appcompat.widget.Toolbar
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom"
+                app:title="Dont't Wait Buy Now"
+                app:titleTextColor="@color/black"
+                android:background="@color/white"
+                android:id="@+id/tool"
+                />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:id="@+id/refresh"
+                    app:shapeAppearance="@style/CustomShape"
+                    android:src="@drawable/refresher"
+                    android:scaleType="centerCrop"
+                    android:layout_marginLeft="300dp"
+                    android:layout_gravity="bottom"
+                  android:layout_marginBottom="10dp"
+                    android:background="@drawable/refresheredit"
+                    />
+            <com.google.android.material.imageview.ShapeableImageView
+                android:layout_width="35dp"
+                android:layout_height="35dp"
+                android:id="@+id/delete"
+                app:shapeAppearance="@style/CustomShape"
+                android:src="@drawable/delete"
+                android:scaleType="centerCrop"
+                android:layout_marginLeft="250dp"
+                android:layout_gravity="bottom"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/refresheredit"
+                />
+
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="1dp"
+                android:background="#5D5C5C"
+                android:layout_gravity="bottom"/>
+        </com.google.android.material.appbar.CollapsingToolbarLayout>
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/white"
+
+        app:layout_behavior="com.google.android.material.appbar.AppBarLayout$ScrollingViewBehavior"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            >
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/crcv"/>
+
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="200dp"
+                android:id="@+id/cartanim"
+                app:lottie_autoPlay="true"
+                app:lottie_loop="true"
+                android:visibility="invisible"
+                android:layout_centerHorizontal="true"
+                 android:layout_marginTop="190dp"
+                app:lottie_rawRes="@raw/bestcart"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="wrap_content"
+                android:layout_height="150dp"
+                android:id="@+id/loaderanim"
+                android:layout_centerHorizontal="true"
+
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:layout_marginTop="200dp"
+                android:visibility="invisible"
+                app:lottie_rawRes="@raw/loader"/>
+            <com.airbnb.lottie.LottieAnimationView
+                android:layout_width="150dp"
+                android:layout_height="150dp"
+                android:id="@+id/alldelete"
+                android:layout_centerHorizontal="true"
+
+                app:lottie_loop="true"
+                app:lottie_autoPlay="true"
+                android:layout_marginTop="200dp"
+                android:visibility="invisible"
+                app:lottie_rawRes="@raw/delete"/>
+
+        </RelativeLayout>
+
+    </androidx.core.widget.NestedScrollView>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
